@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<button onclick="myFunc()">Click Me !</button>
+
+		<p id="test"></p>
+
+		<script>
+		function myFunc() {
+		  	let chr = prompt("Silhakan masukan umur", "");
+		  	let res= new Array()
+          
+          	if(Number.isInteger(chr)){
+				res='Integer'
+			} else if(Array.isArray(chr)){
+				res='Array'
+			} else if(typeof chr ==="object"){
+				res='Object'
+			} else if(typeof chr ==="string"){
+				res='String'
+			} else if(Number(chr) === chr && chr % 1 !== 0){
+				res='Float'
+			}
+
+			if (chr != null) {
+				document.getElementById("test").innerHTML = chr
+			}
+		}
+		</script>
+
+	</body>
+</html>

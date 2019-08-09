@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<button onclick="myFunc()">Click Me !</button>
+
+		<p id="test"></p>
+
+		<script>
+		function myFunc() {
+		  let chr = prompt("Silhakan masukan angka", "");
+		  let result='Tidak ada nilai';
+
+		  if (chr>=90) {
+		  	result='A';
+		  } else if (chr>=80 && chr<=89) {
+		  	result='B'
+		  } else if (chr>=70 && chr<=79) {
+		  	result='C'
+		  } else if (chr>=60 && chr<=69) {
+		  	result='D'
+		  } else if (chr<=59) {
+		  	result='E'
+		  }
+
+		  if (chr != null) {
+		    document.getElementById("test").innerHTML = result;
+		  }
+		}
+		</script>
+
+	</body>
+</html>

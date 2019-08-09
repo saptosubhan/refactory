@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<button onclick="myFunc()">Click Me !</button>
+
+		<p id="test"></p>
+
+		<script>
+		function myFunc() {
+		  let chr = prompt("Silhakan masukan angka", "");
+		  let result='Tidak ada nilai';
+
+		  if (chr%2){
+		  	result='ganjil'
+		  } else {
+		  	result='genap'
+		  }
+
+		  if (chr != null) {
+		    document.getElementById("test").innerHTML = result;
+		  }
+		}
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<button onclick="myFunc()">Click Me !</button>
+
+		<p id="test"></p>
+
+		<script>
+		function myFunc() {
+			let chr = prompt("Silhakan masukan kalimat", "");
+			let result='';
+
+  			chr.split("").forEach(char => result = char + result);
+
+		  if (chr != null) {
+		    document.getElementById("test").innerHTML = result;
+		  }
+		}
+		</script>
+
+	</body>
+</html>

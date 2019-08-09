@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<button onclick="myFunc()">Click Me !</button>
+
+		<p id="test"></p>
+
+		<script>
+		function myFunc() {
+		  let chr = prompt("Silhakan masukan tahun", "");
+		  let result='Tidak ada nilai';
+
+		  let leap_year=(chr % 100 === 0) ? (chr % 400 === 0) : (chr % 4 === 0);
+		  result = leap_year?'Kabisat':'Bukan kabisat'
+
+		  if (chr != null) {
+		    document.getElementById("test").innerHTML = result;
+		  }
+		}
+		</script>
+
+	</body>
+</html>

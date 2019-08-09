@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<button onclick="myFunc()">Click Me !</button>
+
+		<p id="test"></p>
+
+		<script>
+		function myFunc() {
+		  let chr = prompt("Silhakan masukan tahun", "");
+		  let result='Tidak ada hasil';
+
+		  if (chr>=21){
+		  	result='DEWASA'
+		  } else if(chr>=13){
+		  	result='REMAJA'
+		  } else if(chr>=9){
+		  	result='BIMBINGAN ORANG TUA'
+		  } else if (chr<9){
+		  	result='SEMUA USIA'
+		  }
+
+		  if (chr != null) {
+		    document.getElementById("test").innerHTML = result;
+		  }
+		}
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<button onclick="myFunc()">Click Me !</button>
+
+		<p id="test"></p>
+
+		<script>
+		function myFunc() {
+			let chr = prompt("Silhakan masukan kalimat", "");
+			let result='';
+			let res='';
+
+  			chr.split("").forEach(char => result = char + result);
+  			res = (chr==result)?'Palindrom':'Bukan Palindrom'
+
+
+		  if (chr != null) {
+		    document.getElementById("test").innerHTML = res;
+		  }
+		}
+		</script>
+
+	</body>
+</html>

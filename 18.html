@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<button onclick="myFunc()">Click Me !</button>
+
+		<p id="test"></p>
+
+		<script>
+		function myFunc() {
+			const arr = ['Jakarta', 'Aceh', 'Malang', 'Medan', 'Bontang', 'Jogja', 'Jakarta', 'Bandung', 'Malang', 'Solo', 'Palembang', 'Bandung']
+
+			let removeDuplicateArray = (arr) => arr.filter((v,i) => arr.indexOf(v) === i)
+
+			console.log(removeDuplicateArray(arr))
+		}
+		</script>
+
+	</body>
+</html>

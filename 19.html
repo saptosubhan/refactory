@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<button onclick="myFunc()">Click Me !</button>
+
+		<p id="test"></p>
+
+		<script>
+		function myFunc() {
+		  let chr = prompt("Silhakan masukan umur", "");
+		  let res= new Array()
+          
+          for(let i=chr;i>=1;i--){
+              res[i]=i;
+          }
+
+		  if (chr != null) {
+		    document.getElementById("test").innerHTML = res.reverse().join(',');
+		  }
+		}
+		</script>
+
+	</body>
+</html>
